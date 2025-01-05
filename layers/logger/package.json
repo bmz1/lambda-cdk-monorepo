@@ -1,0 +1,23 @@
+{
+  "name": "@layers/logger",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build:layer": "ts-node scripts/build-layer.ts",
+    "clean": "rimraf dist layer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "winston": "^3.17.0"
+  }
+}

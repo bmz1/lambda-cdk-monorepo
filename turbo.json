@@ -1,0 +1,17 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": ["dist/**", "lib/**"],
+      "dependsOn": ["^build"]
+    },
+    "build:layer": {
+      "dependsOn": ["build"],
+      "outputs": ["layer/**"]
+    },
+    "deploy": {
+      "dependsOn": ["build", "build:layer"],
+      "cache": false
+    }
+  }
+}
